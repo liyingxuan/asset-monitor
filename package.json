@@ -27,6 +27,8 @@
     "node": ">=10.0.0"
   },
   "scripts": {
+    "ser-start": "egg-scripts start --daemon --title=egg-server-bds --workers=2",
+    "ser-stop": "egg-scripts stop --title=egg-server-bds",
     "start": "egg-scripts start --daemon --title=egg-server-asset-monitor",
     "stop": "egg-scripts stop --title=egg-server-asset-monitor",
     "dev": "egg-bin dev",
