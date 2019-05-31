@@ -16,6 +16,7 @@ const Scan = {
       let result = '';
 
       try {
+        console.log(url);
         const data = await ctx.http.get(url);
         if (data.message === 'OK') {
           result = new Decimal(data.result).div(100000000);
