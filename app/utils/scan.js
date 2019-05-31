@@ -21,6 +21,7 @@ const Scan = {
           result = new Decimal(data.result).div(100000000);
           isSend = (value !== result.toString());
           result = address + ': ' + result;
+          console.log(result);
         } else {
           console.log(data);
         }
