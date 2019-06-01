@@ -12,7 +12,7 @@ class ethScan extends Subscription {
   }
 
   async subscribe() {
-    Scan.eth(this.ctx);
+    await Scan.eth(this.ctx);
   }
 }
 
