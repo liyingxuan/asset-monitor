@@ -6,7 +6,7 @@ const Scan = require('../utils/scan');
 class ethScan extends Subscription {
   static get schedule() {
     return {
-      interval: '3m',
+      interval: '60m',
       type: 'all',
     };
   }
